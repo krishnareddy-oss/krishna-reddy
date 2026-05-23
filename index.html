@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Krishna Reddy</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+if(!f._fbq)f._fbq=n;
+
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '4361439724001006');
+
+fbq('track', 'PageView');
+</script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:20px;
+
+position:relative;
+
+color:white;
+text-align:center;
+}
+
+body::before{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.75);
+top:0;
+left:0;
+}
+
+.container{
+
+position:relative;
+z-index:2;
+
+width:100%;
+max-width:700px;
+
+background:rgba(255,255,255,0.06);
+
+border:2px solid rgba(255,255,255,0.2);
+
+backdrop-filter:blur(10px);
+
+padding:30px;
+
+border-radius:35px;
+}
+
+.logo{
+
+width:180px;
+height:180px;
+
+border-radius:50%;
+
+border:5px solid white;
+
+object-fit:cover;
+
+box-shadow:0 0 30px #00ffcc;
+
+margin-bottom:20px;
+}
+
+h1{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+color:white;
+
+text-shadow:0 0 15px #ff00ff;
+}
+
+.desc{
+
+font-size:22px;
+
+line-height:1.7;
+
+color:#d7d7d7;
+
+margin-bottom:40px;
+}
+
+.highlight{
+color:#00bfff;
+font-weight:bold;
+}
+
+.join-btn{
+
+display:inline-block;
+
+padding:22px 55px;
+
+border-radius:60px;
+
+background:linear-gradient(90deg,#ff00ff,#ff1493);
+
+color:white;
+
+text-decoration:none;
+
+font-size:28px;
+
+font-weight:bold;
+
+box-shadow:0 0 25px #00ffff;
+
+transition:0.3s;f
+}
+
+.join-btn:hover{
+transform:scale(1.05);
+}
+
+.card{
+
+margin-top:45px;
+
+padding:30px;
+
+border-radius:30px;
+
+border:2px solid rgba(255,255,255,0.3);
+
+background:rgba(255,255,255,0.05);
+}
+
+.card h2{
+
+font-size:35px;
+
+color:#00bfff;
+
+margin-bottom:25px;
+}
+
+.features{
+
+font-size:23px;
+
+line-height:2;
+
+text-align:left;
+}
+
+@media(max-width:768px){
+
+.logo{
+width:150px;
+height:150px;
+}
+
+h1{
+font-size:30px;
+}
+
+.desc{
+font-size:18px;
+}
+
+.join-btn{
+font-size:20px;
+padding:18px 35px;
+}
+
+.features{
+font-size:18px;
+}
+
+.card h2{
+font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo">
+
+<h1>KRISHNA REDDY</h1>
+
+<p class="desc">
+
+Join <span class="highlight">30000+</span> elite traders getting
+
+<span class="highlight">Premium signals</span>
+
+and institution-grade analysis directly on Telegram.
+
+</p>
+
+<a href="https://t.me/+7lzN_Tbv_ic4YmI1"
+
+target="_blank"
+
+class="join-btn"
+
+onclick="trackJoin()">
+
+🚀 JOIN OUR COMMUNITY
+
+</a>
+
+<div class="card">
+
+<h2>Elite Trading Features</h2>
+
+<div class="features">
+
+✔ High precision entry & exit signals<br>
+
+✔ Advanced technical market analysis<br>
+
+✔ Professional risk management strategy<br>
+
+✔ Expert mentorship community<br>
+
+✔ Premium signals completely free
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function trackJoin(){
+
+// Browser Event
+fbq('track','Subscribe');
+
+// Unique Event ID
+const eventId = 'event_' + Date.now();
+
+// Server Event (CAPI)
+
+fetch('https://graph.facebook.com/v19.0/4361439724001006/events?access_token=EAGEIoCMls04BRnEeKZAlIqSypZAjnepFhNfdblOj7c0PexSHsdp2ZA2IffwZALEj5rCSEShOu41UkZByXTXNeWQtRtRhZBwWB19UiqrQaghC6oH8AUtXjXcxXYZANIbtfVnsPJayJsbr2Yytsb4b3C0EpwZAbTVE2RhNrLIXOyrXch7arFcH43jmm3QxJjFuJplNqwZDZD',{
+
+method:'POST',
+
+headers:{
+'Content-Type':'application/json'
+},
+
+body:JSON.stringify({
+
+data:[{
+
+event_name:'Subscribe',
+
+event_time:Math.floor(Date.now()/1000),
+
+action_source:'website',
+
+event_id:eventId,
+
+user_data:{
+client_user_agent:navigator.userAgent
+},
+
+custom_data:{
+content_name:'Telegram Join'
+}
+
+}]
+
+})
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
